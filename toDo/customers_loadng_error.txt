@@ -1,0 +1,25 @@
+[2020-11-29T06:17:14.225Z]  @firebase/firestore:, Firestore (7.8.1): Could not reach Cloud Firestore backend. Backend didn't respond within 10 seconds.
+This typically indicates that your device does not have a healthy Internet connection at the moment. The client will operate in offline mode until it is able to successfully connect to the backend.
+
+Stack trace:
+  node_modules/react-native/Libraries/YellowBox/YellowBox.js:63:8 in console.error
+  node_modules/expo/build/environment/muteWarnings.fx.js:27:24 in error
+  node_modules/@firebase/component/dist/index.cjs.js:41:4 in <anonymous>
+  node_modules/@firebase/component/dist/index.cjs.js:129:18 in Provider.prototype.getImmediate
+  node_modules/@firebase/auth/dist/auth.js:361:322 in <anonymous>
+  node_modules/@firebase/firestore/dist/index.cjs.js:1:216861 in t.serverTimestamp
+  http://192.168.1.100:19001/node_modules/expo/AppEntry.bundle?platform=android&dev=true&minify=false&hot=false:184451:147 in <unknown>
+  node_modules/@firebase/firestore/dist/index.cjs.js:1:95744 in t.prototype.Gi
+  node_modules/@firebase/firestore/dist/index.cjs.js:1:97209 in t.prototype.Mi
+  node_modules/promise/setimmediate/core.js:37:14 in tryCallOne
+  node_modules/promise/setimmediate/core.js:123:25 in setImmediate$argument_0
+  node_modules/react-native/Libraries/Core/Timers/JSTimers.js:146:14 in _callTimer
+  node_modules/react-native/Libraries/Core/Timers/JSTimers.js:194:17 in _callImmediatesPass
+  node_modules/react-native/Libraries/Core/Timers/JSTimers.js:458:30 in callImmediates
+  [native code]:null in callImmediates
+  node_modules/react-native/Libraries/BatchedBridge/MessageQueue.js:407:6 in __callImmediates
+  node_modules/react-native/Libraries/BatchedBridge/MessageQueue.js:143:6 in __guard$argument_0
+  node_modules/react-native/Libraries/BatchedBridge/MessageQueue.js:384:10 in __guard
+  node_modules/react-native/Libraries/BatchedBridge/MessageQueue.js:142:17 in __guard$argument_0
+  [native code]:null in flushedQueue
+  [native code]:null in callFunctionReturnFlushedQueue

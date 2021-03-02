@@ -1,0 +1,995 @@
+"version": t {
+      "timestamp": t {
+        "nanoseconds": 233964000,
+        "seconds": 1605594891,
+      },
+    },
+  },
+  "fP": false,
+  "hP": false,
+  "iP": undefined,
+  "nP": t {
+    "$E": t {
+      "tl": [Function anonymous],
+    },
+    "BE": FirebaseAppImpl {
+      "automaticDataCollectionEnabled_": false,
+      "container": ComponentContainer {
+        "name": "[DEFAULT]",
+        "providers": Map {
+          "app" => Provider {
+            "component": Component {
+              "instanceFactory": [Function anonymous],
+              "instantiationMode": "LAZY",
+              "multipleInstances": false,
+              "name": "app",
+              "serviceProps": Object {},
+              "type": "PUBLIC",
+            },
+            "container": [Circular],
+            "instances": Map {
+              "[DEFAULT]" => [Circular],
+            },
+            "instancesDeferred": Map {},
+            "name": "app",
+          },
+          "platform-logger" => Provider {
+            "component": Component {
+              "instanceFactory": [Function anonymous],
+              "instantiationMode": "LAZY",
+              "multipleInstances": false,
+              "name": "platform-logger",
+              "serviceProps": Object {},
+              "type": "PRIVATE",
+            },
+            "container": [Circular],
+            "instances": Map {},
+            "instancesDeferred": Map {},
+            "name": "platform-logger",
+          },
+          "fire-core-rn-version" => Provider {
+            "component": Component {
+              "instanceFactory": [Function anonymous],
+              "instantiationMode": "LAZY",
+              "multipleInstances": false,
+              "name": "fire-core-rn-version",
+              "serviceProps": Object {},
+              "type": "VERSION",
+            },
+            "container": [Circular],
+            "instances": Map {},
+            "instancesDeferred": Map {},
+            "name": "fire-core-rn-version",
+          },
+          "fire-js-version" => Provider {
+            "component": Component {
+              "instanceFactory": [Function anonymous],
+              "instantiationMode": "LAZY",
+              "multipleInstances": false,
+              "name": "fire-js-version",
+              "serviceProps": Object {},
+              "type": "VERSION",
+            },
+            "container": [Circular],
+            "instances": Map {},
+            "instancesDeferred": Map {},
+            "name": "fire-js-version",
+          },
+          "firebase-app-version" => Provider {
+            "component": Component {
+              "instanceFactory": [Function anonymous],
+              "instantiationMode": "LAZY",
+              "multipleInstances": false,
+              "name": "firebase-app-version",
+              "serviceProps": Object {},
+              "type": "VERSION",
+            },
+            "container": [Circular],
+            "instances": Map {},
+            "instancesDeferred": Map {},
+            "name": "firebase-app-version",
+          },
+          "auth" => Provider {
+            "component": Object {
+              "instanceFactory": [Function instanceFactory],
+              "instantiationMode": "LAZY",
+              "multipleInstances": false,
+              "name": "auth",
+              "serviceProps": Object {
+                "ActionCodeInfo": Object {
+                  "Operation": Object {
+                    "EMAIL_SIGNIN": "EMAIL_SIGNIN",
+                    "PASSWORD_RESET": "PASSWORD_RESET",
+                    "RECOVER_EMAIL": "RECOVER_EMAIL",
+                    "VERIFY_EMAIL": "VERIFY_EMAIL",
+                  },
+                },
+                "ActionCodeURL": [Function d],
+                "Auth": [Function Lm],
+                "AuthCredential": [Function kg],
+                "EmailAuthProvider": [Function d],
+                "Error": [Function M],
+                "FacebookAuthProvider": [Function d],
+                "GithubAuthProvider": [Function d],
+                "GoogleAuthProvider": [Function d],
+                "OAuthProvider": [Function d],
+                "PhoneAuthProvider": [Function d],
+                "RecaptchaVerifier": [Function d],
+                "SAMLAuthProvider": [Function d],
+                "TwitterAuthProvider": [Function d],
+              },
+              "type": "PUBLIC",
+            },
+            "container": [Circular],
+            "instances": Map {
+              "[DEFAULT]" => Object {
+                "apiKey": "AIzaSyC79EBEgrIGKpJH1EJY37Dcn2Uo6OwVcFk",
+                "appName": "[DEFAULT]",
+                "authDomain": "knight-rider-cabs.firebaseapp.com",
+                "currentUser": Object {
+                  "apiKey": "AIzaSyC79EBEgrIGKpJH1EJY37Dcn2Uo6OwVcFk",
+                  "appName": "[DEFAULT]",
+                  "authDomain": "knight-rider-cabs.firebaseapp.com",
+                  "createdAt": "1591515492551",
+                  "displayName": null,
+                  "email": "kasun@gmail.com",
+                  "emailVerified": false,
+                  "isAnonymous": false,
+                  "lastLoginAt": "1605953753999",
+                  "phoneNumber": null,
+                  "photoURL": null,
+                  "providerData": Array [
+                    Object {
+                      "displayName": null,
+                      "email": "kasun@gmail.com",
+                      "phoneNumber": null,
+                      "photoURL": null,
+                      "providerId": "password",
+                      "uid": "kasun@gmail.com",
+                    },
+                  ],
+                  "redirectEventId": null,
+                  "stsTokenManager": Object {
+                    "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjNlNTQyN2NkMzUxMDhiNDc2NjUyMDhlYTA0YjhjYTZjODZkMDljOTMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20va25pZ2h0LXJpZGVyLWNhYnMiLCJhdWQiOiJrbmlnaHQtcmlkZXItY2FicyIsImF1dGhfdGltZSI6MTYwNTk1Mzg3MSwidXNlcl9pZCI6IkNDbTUxMEdRNlJaRm9VeFBjVWxxSVY2S2w2bTEiLCJzdWIiOiJDQ201MTBHUTZSWkZvVXhQY1VscUlWNktsNm0xIiwiaWF0IjoxNjA1OTUzODcxLCJleHAiOjE2MDU5NTc0NzEsImVtYWlsIjoia2FzdW5AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImthc3VuQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.bDVPn_21W4za1GOI-bxTGz31VQahmyj2Pk1HcXMKAO0L537CgNxOLdNKV-8qcLWbCLI3slMkBl92NsQX1ct_dNnZP51ZuEXCGYqYl5VdIoj-d0wKz1YOErf1m5QgLwQtW2nZFw6_1GRQBPKktADzeNqL945SpWFVJuYBN5Ko5QkgJgUteWTFL_gaj-EzV-UNUq24-WUKhl38m5J_d0278-aAgQqtkd4QNtIKQDfVvekVWA7VHnl_ehYaXMB3UzsaIxTguC4P9YG684EdU8ooYZz764qigCXOt6HAnqUmK8O4zjeq0rQJ8PTVMFQ9Ld4nRoY2_NZ6Ufz32Et30Fs9lg",
+                    "apiKey": "AIzaSyC79EBEgrIGKpJH1EJY37Dcn2Uo6OwVcFk",
+                    "expirationTime": 1605957470798,
+                    "refreshToken": "AG8BCnc6Szg5HdbkMG8AMa-xcCIQX4JU_Rs14tPO7YSpLmOUX8u8JxWLztZ1ugFaRj9RCr-bp8fIZPTzYDz1Shbrvp5Kw2eIMmaxYdD4YGybILX2bC7aBdWaBqAgk-ghKPZg5tNJy-tGa-BZEQ8LgPFDXv6dipjhEpruBOpQpT1-zathcBu2eM9rRyrO9WYpsi-2h5VrUqVFJp1_WBF4U55w5riKr_ZQuw",
+                  },
+                  "tenantId": null,
+                  "uid": "CCm510GQ6RZFoUxPcUlqIV6Kl6m1",
+                },
+              },
+            },
+            "instancesDeferred": Map {},
+            "name": "auth",
+          },
+          "auth-internal" => Provider {
+            "component": Object {
+              "instanceFactory": [Function instanceFactory],
+              "instantiationMode": "LAZY",
+              "multipleInstances": false,
+              "name": "auth-internal",
+              "type": "PRIVATE",
+            },
+            "container": [Circular],
+            "instances": Map {
+              "[DEFAULT]" => Object {
+                "addAuthTokenListener": [Function bound ],
+                "getToken": [Function bound ],
+                "getUid": [Function bound ],
+                "removeAuthTokenListener": [Function bound ],
+              },
+            },
+            "instancesDeferred": Map {},
+            ...(truncated to the first 10000 characters)
+Found document at customers/bDOwAZmQdh90s4n4KL8Q
+e {
+  "ZE": t {
+    "path": e {
+      "len": 2,
+      "offset": 5,
+      "segments": Array [
+        "projects",
+        "knight-rider-cabs",
+        "databases",
+        "(default)",
+        "documents",
+        "customers",
+        "bDOwAZmQdh90s4n4KL8Q",
+      ],
+    },
+  },
+  "cP": e {
+    "Qe": Map {
+      "status" => e {
+        "Ne": 4,
+        "Zt": "active",
+      },
+    },
+    "ce": false,
+    "converter": [Function anonymous],
+    "hasCommittedMutations": false,
+    "key": t {
+      "path": e {
+        "len": 2,
+        "offset": 5,
+        "segments": Array [
+          "projects",
+          "knight-rider-cabs",
+          "databases",
+          "(default)",
+          "documents",
+          "customers",
+          "bDOwAZmQdh90s4n4KL8Q",
+        ],
+      },
+    },
+    "proto": Object {
+      "createTime": "2020-06-11T15:53:09.045771Z",
+      "fields": Object {
+        "commission": Object {
+          "stringValue": "500",
+        },
+        "createdAt": Object {
+          "stringValue": "2020-06-11T10:55:36.994Z",
+        },
+        "distance": Object {
+          "integerValue": "12",
+        },
+        "email": Object {
+          "stringValue": "customer1@gmail.com",
+        },
+        "end": Object {
+          "stringValue": "Maharagama",
+        },
+        "fullname": Object {
+          "stringValue": "Jenny Kulathunga",
+        },
+        "imageUrl": Object {
+          "stringValue": "https://firebasestorage.googleapis.com/v0/b/knight-rider-cabs.appspot.com/o/44fcf69cbef4ab350d6f7e61fbf2e63f.jpg?alt=media&token=1f5991fe-6a5d-4dc0-b8c3-2a7276bfdd10",
+        },
+        "phone": Object {
+          "integerValue": "777234567",
+        },
+        "start": Object {
+          "stringValue": "Kollupitiya",
+        },
+        "status": Object {
+          "stringValue": "active",
+        },
+        "username": Object {
+          "stringValue": "customer1",
+        },
+      },
+      "name": "projects/knight-rider-cabs/databases/(default)/documents/customers/bDOwAZmQdh90s4n4KL8Q",
+      "updateTime": "2020-11-21T09:44:29.959823Z",
+    },
+    "qe": undefined,
+    "version": t {
+      "timestamp": t {
+        "nanoseconds": 959823000,
+        "seconds": 1605951869,
+      },
+    },
+  },
+  "fP": false,
+  "hP": false,
+  "iP": undefined,
+  "nP": t {
+    "$E": t {
+      "tl": [Function anonymous],
+    },
+    "BE": FirebaseAppImpl {
+      "automaticDataCollectionEnabled_": false,
+      "container": ComponentContainer {
+        "name": "[DEFAULT]",
+        "providers": Map {
+          "app" => Provider {
+            "component": Component {
+              "instanceFactory": [Function anonymous],
+              "instantiationMode": "LAZY",
+              "multipleInstances": false,
+              "name": "app",
+              "serviceProps": Object {},
+              "type": "PUBLIC",
+            },
+            "container": [Circular],
+            "instances": Map {
+              "[DEFAULT]" => [Circular],
+            },
+            "instancesDeferred": Map {},
+            "name": "app",
+          },
+          "platform-logger" => Provider {
+            "component": Component {
+              "instanceFactory": [Function anonymous],
+              "instantiationMode": "LAZY",
+              "multipleInstances": false,
+              "name": "platform-logger",
+              "serviceProps": Object {},
+              "type": "PRIVATE",
+            },
+            "container": [Circular],
+            "instances": Map {},
+            "instancesDeferred": Map {},
+            "name": "platform-logger",
+          },
+          "fire-core-rn-version" => Provider {
+            "component": Component {
+              "instanceFactory": [Function anonymous],
+              "instantiationMode": "LAZY",
+              "multipleInstances": false,
+              "name": "fire-core-rn-version",
+              "serviceProps": Object {},
+              "type": "VERSION",
+            },
+            "container": [Circular],
+            "instances": Map {},
+            "instancesDeferred": Map {},
+            "name": "fire-core-rn-version",
+          },
+          "fire-js-version" => Provider {
+            "component": Component {
+              "instanceFactory": [Function anonymous],
+              "instantiationMode": "LAZY",
+              "multipleInstances": false,
+              "name": "fire-js-version",
+              "serviceProps": Object {},
+              "type": "VERSION",
+            },
+            "container": [Circular],
+            "instances": Map {},
+            "instancesDeferred": Map {},
+            "name": "fire-js-version",
+          },
+          "firebase-app-version" => Provider {
+            "component": Component {
+              "instanceFactory": [Function anonymous],
+              "instantiationMode": "LAZY",
+              "multipleInstances": false,
+              "name": "firebase-app-version",
+              "serviceProps": Object {},
+              "type": "VERSION",
+            },
+            "container": [Circular],
+            "instances": Map {},
+            "instancesDeferred": Map {},
+            "name": "firebase-app-version",
+          },
+          "auth" => Provider {
+            "component": Object {
+              "instanceFactory": [Function instanceFactory],
+              "instantiationMode": "LAZY",
+              "multipleInstances": false,
+              "name": "auth",
+              "serviceProps": Object {
+                "ActionCodeInfo": Object {
+                  "Operation": Object {
+                    "EMAIL_SIGNIN": "EMAIL_SIGNIN",
+                    "PASSWORD_RESET": "PASSWORD_RESET",
+                    "RECOVER_EMAIL": "RECOVER_EMAIL",
+                    "VERIFY_EMAIL": "VERIFY_EMAIL",
+                  },
+                },
+                "ActionCodeURL": [Function d],
+                "Auth": [Function Lm],
+                "AuthCredential": [Function kg],
+                "EmailAuthProvider": [Function d],
+                "Error": [Function M],
+                "FacebookAuthProvider": [Function d],
+                "GithubAuthProvider": [Function d],
+                "GoogleAuthProvider": [Function d],
+                "OAuthProvider": [Function d],
+                "PhoneAuthProvider": [Function d],
+                "RecaptchaVerifier": [Function d],
+                "SAMLAuthProvider": [Function d],
+                "TwitterAuthProvider": [Function d],
+              },
+              "type": "PUBLIC",
+            },
+            "container": [Circular],
+            "instances": Map {
+              "[DEFAULT]" => Object {
+                "apiKey": "AIzaSyC79EBEgrIGKpJH1EJY37Dcn2Uo6OwVcFk",
+                "appName": "[DEFAULT]",
+                "authDomain": "knight-rider-cabs.firebaseapp.com",
+                "currentUser": Object {
+                  "apiKey": "AIzaSyC79EBEgrIGKpJH1EJY37Dcn2Uo6OwVcFk",
+                  "appName": "[DEFAULT]",
+                  "authDomain": "knight-rider-cabs.firebaseapp.com",
+                  "createdAt": "1591515492551",
+                  "displayName": null,
+                  "email": "kasun@gmail.com",
+                  "emailVerified": false,
+                  "isAnonymous": false,
+                  "lastLoginAt": "1605953753999",
+                  "phoneNumber": null,
+                  "photoURL": null,
+                  "providerData": Array [
+                    Object {
+                      "displayName": null,
+                      "email": "kasun@gmail.com",
+                      "phoneNumber": null,
+                      "photoURL": null,
+                      "providerId": "password",
+                      "uid": "kasun@gmail.com",
+                    },
+                  ],
+                  "redirectEventId": null,
+                  "stsTokenManager": Object {
+                    "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjNlNTQyN2NkMzUxMDhiNDc2NjUyMDhlYTA0YjhjYTZjODZkMDljOTMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20va25pZ2h0LXJpZGVyLWNhYnMiLCJhdWQiOiJrbmlnaHQtcmlkZXItY2FicyIsImF1dGhfdGltZSI6MTYwNTk1Mzg3MSwidXNlcl9pZCI6IkNDbTUxMEdRNlJaRm9VeFBjVWxxSVY2S2w2bTEiLCJzdWIiOiJDQ201MTBHUTZSWkZvVXhQY1VscUlWNktsNm0xIiwiaWF0IjoxNjA1OTUzODcxLCJleHAiOjE2MDU5NTc0NzEsImVtYWlsIjoia2FzdW5AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImthc3VuQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.bDVPn_21W4za1GOI-bxTGz31VQahmyj2Pk1HcXMKAO0L537CgNxOLdNKV-8qcLWbCLI3slMkBl92NsQX1ct_dNnZP51ZuEXCGYqYl5VdIoj-d0wKz1YOErf1m5QgLwQtW2nZFw6_1GRQBPKktADzeNqL945SpWFVJuYBN5Ko5QkgJgUteWTFL_gaj-EzV-UNUq24-WUKhl38m5J_d0278-aAgQqtkd4QNtIKQDfVvekVWA7VHnl_ehYaXMB3UzsaIxTguC4P9YG684EdU8ooYZz764qigCXOt6HAnqUmK8O4zjeq0rQJ8PTVMFQ9Ld4nRoY2_NZ6Ufz32Et30Fs9lg",
+                    "apiKey": "AIzaSyC79EBEgrIGKpJH1EJY37Dcn2Uo6OwVcFk",
+                    "expirationTime": 1605957470798,
+                    "refreshToken": "AG8BCnc6Szg5HdbkMG8AMa-xcCIQX4JU_Rs14tPO7YSpLmOUX8u8JxWLztZ1ugFaRj9RCr-bp8fIZPTzYDz1Shbrvp5Kw2eIMmaxYdD4YGybILX2bC7aBdWaBqAgk-ghKPZg5tNJy-tGa-BZEQ8LgPFDXv6dipjhEpruBOpQpT1-zathcBu2eM9rRyrO9WYpsi-2h5VrUqVFJp1_WBF4U55w5riKr_ZQuw",
+                  },
+                  "tenantId": null,
+                  "uid": "CCm510GQ6RZFoUxPcUlqIV6Kl6m1",
+                },
+              },
+            },
+            "instancesDeferred": Map {},
+            "name": "auth",
+          },
+          "auth-internal" => Provider {
+            "component": Object {
+              "instanceFactory": [Function instanceFactory],
+              "instantiationMode": "LAZY",
+              "multipleInstances": false,
+              "name": "auth-internal",
+              "type": "PRIVATE",
+            },
+            "container": [Circular],
+            "instances": Map {
+              "[DEFAULT]" => Object {
+                "addAuthTokenListener": [Function bound ],
+                "getToken": [Function bound ],
+                "getUid": [Function bound ],
+                "removeAuthTokenListener": [Function bound ],
+              },
+     ...(truncated to the first 10000 characters)
+working
+Found document at customers/2vBT2z73gJ5cEonALtt4
+Found document at customers/EwtfMIgKs0dcfCSPVWRg
+Found document at customers/bDOwAZmQdh90s4n4KL8Q
+working
+Found document at customers/2vBT2z73gJ5cEonALtt4
+e {
+  "ZE": t {
+    "path": e {
+      "len": 2,
+      "offset": 5,
+      "segments": Array [
+        "projects",
+        "knight-rider-cabs",
+        "databases",
+        "(default)",
+        "documents",
+        "customers",
+        "2vBT2z73gJ5cEonALtt4",
+      ],
+    },
+  },
+  "cP": e {
+    "Qe": Map {
+      "status" => e {
+        "Ne": 4,
+        "Zt": "active",
+      },
+    },
+    "ce": false,
+    "converter": [Function anonymous],
+    "hasCommittedMutations": false,
+    "key": t {
+      "path": e {
+        "len": 2,
+        "offset": 5,
+        "segments": Array [
+          "projects",
+          "knight-rider-cabs",
+          "databases",
+          "(default)",
+          "documents",
+          "customers",
+          "2vBT2z73gJ5cEonALtt4",
+        ],
+      },
+    },
+    "proto": Object {
+      "createTime": "2020-06-11T16:02:48.292465Z",
+      "fields": Object {
+        "commission ": Object {
+          "integerValue": "500",
+        },
+        "createdAt": Object {
+          "stringValue": "2020-06-11T05:55:36.994Z",
+        },
+        "distance": Object {
+          "integerValue": "5",
+        },
+        "email": Object {
+          "stringValue": "customer3@gmail.com",
+        },
+        "end": Object {
+          "stringValue": "Nugegoda",
+        },
+        "fullname": Object {
+          "stringValue": "Anne Kulathunga",
+        },
+        "imageUrl": Object {
+          "stringValue": "https://firebasestorage.googleapis.com/v0/b/knight-rider-cabs.appspot.com/o/39200298313.jpg?alt=media",
+        },
+        "phone": Object {
+          "integerValue": "711277567",
+        },
+        "start": Object {
+          "stringValue": "Havelock Town",
+        },
+        "status": Object {
+          "stringValue": "active",
+        },
+        "username": Object {
+          "stringValue": "customer3",
+        },
+      },
+      "name": "projects/knight-rider-cabs/databases/(default)/documents/customers/2vBT2z73gJ5cEonALtt4",
+      "updateTime": "2020-11-17T06:31:59.831973Z",
+    },
+    "qe": undefined,
+    "version": t {
+      "timestamp": t {
+        "nanoseconds": 831973000,
+        "seconds": 1605594719,
+      },
+    },
+  },
+  "fP": false,
+  "hP": false,
+  "iP": undefined,
+  "nP": t {
+    "$E": t {
+      "tl": [Function anonymous],
+    },
+    "BE": FirebaseAppImpl {
+      "automaticDataCollectionEnabled_": false,
+      "container": ComponentContainer {
+        "name": "[DEFAULT]",
+        "providers": Map {
+          "app" => Provider {
+            "component": Component {
+              "instanceFactory": [Function anonymous],
+              "instantiationMode": "LAZY",
+              "multipleInstances": false,
+              "name": "app",
+              "serviceProps": Object {},
+              "type": "PUBLIC",
+            },
+            "container": [Circular],
+            "instances": Map {
+              "[DEFAULT]" => [Circular],
+            },
+            "instancesDeferred": Map {},
+            "name": "app",
+          },
+          "platform-logger" => Provider {
+            "component": Component {
+              "instanceFactory": [Function anonymous],
+              "instantiationMode": "LAZY",
+              "multipleInstances": false,
+              "name": "platform-logger",
+              "serviceProps": Object {},
+              "type": "PRIVATE",
+            },
+            "container": [Circular],
+            "instances": Map {},
+            "instancesDeferred": Map {},
+            "name": "platform-logger",
+          },
+          "fire-core-rn-version" => Provider {
+            "component": Component {
+              "instanceFactory": [Function anonymous],
+              "instantiationMode": "LAZY",
+              "multipleInstances": false,
+              "name": "fire-core-rn-version",
+              "serviceProps": Object {},
+              "type": "VERSION",
+            },
+            "container": [Circular],
+            "instances": Map {},
+            "instancesDeferred": Map {},
+            "name": "fire-core-rn-version",
+          },
+          "fire-js-version" => Provider {
+            "component": Component {
+              "instanceFactory": [Function anonymous],
+              "instantiationMode": "LAZY",
+              "multipleInstances": false,
+              "name": "fire-js-version",
+              "serviceProps": Object {},
+              "type": "VERSION",
+            },
+            "container": [Circular],
+            "instances": Map {},
+            "instancesDeferred": Map {},
+            "name": "fire-js-version",
+          },
+          "firebase-app-version" => Provider {
+            "component": Component {
+              "instanceFactory": [Function anonymous],
+              "instantiationMode": "LAZY",
+              "multipleInstances": false,
+              "name": "firebase-app-version",
+              "serviceProps": Object {},
+              "type": "VERSION",
+            },
+            "container": [Circular],
+            "instances": Map {},
+            "instancesDeferred": Map {},
+            "name": "firebase-app-version",
+          },
+          "auth" => Provider {
+            "component": Object {
+              "instanceFactory": [Function instanceFactory],
+              "instantiationMode": "LAZY",
+              "multipleInstances": false,
+              "name": "auth",
+              "serviceProps": Object {
+                "ActionCodeInfo": Object {
+                  "Operation": Object {
+                    "EMAIL_SIGNIN": "EMAIL_SIGNIN",
+                    "PASSWORD_RESET": "PASSWORD_RESET",
+                    "RECOVER_EMAIL": "RECOVER_EMAIL",
+                    "VERIFY_EMAIL": "VERIFY_EMAIL",
+                  },
+                },
+                "ActionCodeURL": [Function d],
+                "Auth": [Function Lm],
+                "AuthCredential": [Function kg],
+                "EmailAuthProvider": [Function d],
+                "Error": [Function M],
+                "FacebookAuthProvider": [Function d],
+                "GithubAuthProvider": [Function d],
+                "GoogleAuthProvider": [Function d],
+                "OAuthProvider": [Function d],
+                "PhoneAuthProvider": [Function d],
+                "RecaptchaVerifier": [Function d],
+                "SAMLAuthProvider": [Function d],
+                "TwitterAuthProvider": [Function d],
+              },
+              "type": "PUBLIC",
+            },
+            "container": [Circular],
+            "instances": Map {
+              "[DEFAULT]" => Object {
+                "apiKey": "AIzaSyC79EBEgrIGKpJH1EJY37Dcn2Uo6OwVcFk",
+                "appName": "[DEFAULT]",
+                "authDomain": "knight-rider-cabs.firebaseapp.com",
+                "currentUser": Object {
+                  "apiKey": "AIzaSyC79EBEgrIGKpJH1EJY37Dcn2Uo6OwVcFk",
+                  "appName": "[DEFAULT]",
+                  "authDomain": "knight-rider-cabs.firebaseapp.com",
+                  "createdAt": "1591515492551",
+                  "displayName": null,
+                  "email": "kasun@gmail.com",
+                  "emailVerified": false,
+                  "isAnonymous": false,
+                  "lastLoginAt": "1605953753999",
+                  "phoneNumber": null,
+                  "photoURL": null,
+                  "providerData": Array [
+                    Object {
+                      "displayName": null,
+                      "email": "kasun@gmail.com",
+                      "phoneNumber": null,
+                      "photoURL": null,
+                      "providerId": "password",
+                      "uid": "kasun@gmail.com",
+                    },
+                  ],
+                  "redirectEventId": null,
+                  "stsTokenManager": Object {
+                    "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjNlNTQyN2NkMzUxMDhiNDc2NjUyMDhlYTA0YjhjYTZjODZkMDljOTMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20va25pZ2h0LXJpZGVyLWNhYnMiLCJhdWQiOiJrbmlnaHQtcmlkZXItY2FicyIsImF1dGhfdGltZSI6MTYwNTk1Mzg3MSwidXNlcl9pZCI6IkNDbTUxMEdRNlJaRm9VeFBjVWxxSVY2S2w2bTEiLCJzdWIiOiJDQ201MTBHUTZSWkZvVXhQY1VscUlWNktsNm0xIiwiaWF0IjoxNjA1OTUzODcxLCJleHAiOjE2MDU5NTc0NzEsImVtYWlsIjoia2FzdW5AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImthc3VuQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.bDVPn_21W4za1GOI-bxTGz31VQahmyj2Pk1HcXMKAO0L537CgNxOLdNKV-8qcLWbCLI3slMkBl92NsQX1ct_dNnZP51ZuEXCGYqYl5VdIoj-d0wKz1YOErf1m5QgLwQtW2nZFw6_1GRQBPKktADzeNqL945SpWFVJuYBN5Ko5QkgJgUteWTFL_gaj-EzV-UNUq24-WUKhl38m5J_d0278-aAgQqtkd4QNtIKQDfVvekVWA7VHnl_ehYaXMB3UzsaIxTguC4P9YG684EdU8ooYZz764qigCXOt6HAnqUmK8O4zjeq0rQJ8PTVMFQ9Ld4nRoY2_NZ6Ufz32Et30Fs9lg",
+                    "apiKey": "AIzaSyC79EBEgrIGKpJH1EJY37Dcn2Uo6OwVcFk",
+                    "expirationTime": 1605957470798,
+                    "refreshToken": "AG8BCnc6Szg5HdbkMG8AMa-xcCIQX4JU_Rs14tPO7YSpLmOUX8u8JxWLztZ1ugFaRj9RCr-bp8fIZPTzYDz1Shbrvp5Kw2eIMmaxYdD4YGybILX2bC7aBdWaBqAgk-ghKPZg5tNJy-tGa-BZEQ8LgPFDXv6dipjhEpruBOpQpT1-zathcBu2eM9rRyrO9WYpsi-2h5VrUqVFJp1_WBF4U55w5riKr_ZQuw",
+                  },
+                  "tenantId": null,
+                  "uid": "CCm510GQ6RZFoUxPcUlqIV6Kl6m1",
+                },
+              },
+            },
+            "instancesDeferred": Map {},
+            "name": "auth",
+          },
+          "auth-internal" => Provider {
+            "component": Object {
+              "instanceFactory": [Function instanceFactory],
+              "instantiationMode": "LAZY",
+              "multipleInstances": false,
+              "name": "auth-internal",
+              "type": "PRIVATE",
+            },
+            "container": [Circular],
+            "instances": Map {
+              "[DEFAULT]" => Object {
+                "addAuthTokenListener": [Function bound ],
+                "getToken": [Function bound ],
+                "getUid": [Function bound ],
+                "removeAuthTokenListener": [Function bound ],
+              },
+            },
+            "instancesDeferred": Map {},
+            "...(truncated to the first 10000 characters)
+Found document at customers/EwtfMIgKs0dcfCSPVWRg
+e {
+  "ZE": t {
+    "path": e {
+      "len": 2,
+      "offset": 5,
+      "segments": Array [
+        "projects",
+        "knight-rider-cabs",
+        "databases",
+        "(default)",
+        "documents",
+        "customers",
+        "EwtfMIgKs0dcfCSPVWRg",
+      ],
+    },
+  },
+  "cP": e {
+    "Qe": Map {
+      "status" => e {
+        "Ne": 4,
+        "Zt": "active",
+      },
+    },
+    "ce": false,
+    "converter": [Function anonymous],
+    "hasCommittedMutations": false,
+    "key": t {
+      "path": e {
+        "len": 2,
+        "offset": 5,
+        "segments": Array [
+          "projects",
+          "knight-rider-cabs",
+          "databases",
+          "(default)",
+          "documents",
+          "customers",
+          "EwtfMIgKs0dcfCSPVWRg",
+        ],
+      },
+    },
+    "proto": Object {
+      "createTime": "2020-06-11T15:56:02.678923Z",
+      "fields": Object {
+        "commission": Object {
+          "integerValue": "600",
+        },
+        "createdAt": Object {
+          "stringValue": "2020-06-11T07:55:36.994Z",
+        },
+        "distance": Object {
+          "integerValue": "15",
+        },
+        "email": Object {
+          "stringValue": "customer2@gmail.com",
+        },
+        "end": Object {
+          "stringValue": "Maharagama",
+        },
+        "fullname": Object {
+          "stringValue": "Amila Kulathunga",
+        },
+        "imageUrl": Object {
+          "stringValue": "https://firebasestorage.googleapis.com/v0/b/knight-rider-cabs.appspot.com/o/7193219662.jpg?alt=media",
+        },
+        "phone": Object {
+          "integerValue": "771734567",
+        },
+        "start": Object {
+          "stringValue": "Colombo Fort",
+        },
+        "status": Object {
+          "stringValue": "active",
+        },
+        "username": Object {
+          "stringValue": "customer2",
+        },
+      },
+      "name": "projects/knight-rider-cabs/databases/(default)/documents/customers/EwtfMIgKs0dcfCSPVWRg",
+      "updateTime": "2020-11-17T06:34:51.233964Z",
+    },
+    "qe": undefined,
+    "version": t {
+      "timestamp": t {
+        "nanoseconds": 233964000,
+        "seconds": 1605594891,
+      },
+    },
+  },
+  "fP": false,
+  "hP": false,
+  "iP": undefined,
+  "nP": t {
+    "$E": t {
+      "tl": [Function anonymous],
+    },
+    "BE": FirebaseAppImpl {
+      "automaticDataCollectionEnabled_": false,
+      "container": ComponentContainer {
+        "name": "[DEFAULT]",
+        "providers": Map {
+          "app" => Provider {
+            "component": Component {
+              "instanceFactory": [Function anonymous],
+              "instantiationMode": "LAZY",
+              "multipleInstances": false,
+              "name": "app",
+              "serviceProps": Object {},
+              "type": "PUBLIC",
+            },
+            "container": [Circular],
+            "instances": Map {
+              "[DEFAULT]" => [Circular],
+            },
+            "instancesDeferred": Map {},
+            "name": "app",
+          },
+          "platform-logger" => Provider {
+            "component": Component {
+              "instanceFactory": [Function anonymous],
+              "instantiationMode": "LAZY",
+              "multipleInstances": false,
+              "name": "platform-logger",
+              "serviceProps": Object {},
+              "type": "PRIVATE",
+            },
+            "container": [Circular],
+            "instances": Map {},
+            "instancesDeferred": Map {},
+            "name": "platform-logger",
+          },
+          "fire-core-rn-version" => Provider {
+            "component": Component {
+              "instanceFactory": [Function anonymous],
+              "instantiationMode": "LAZY",
+              "multipleInstances": false,
+              "name": "fire-core-rn-version",
+              "serviceProps": Object {},
+              "type": "VERSION",
+            },
+            "container": [Circular],
+            "instances": Map {},
+            "instancesDeferred": Map {},
+            "name": "fire-core-rn-version",
+          },
+          "fire-js-version" => Provider {
+            "component": Component {
+              "instanceFactory": [Function anonymous],
+              "instantiationMode": "LAZY",
+              "multipleInstances": false,
+              "name": "fire-js-version",
+              "serviceProps": Object {},
+              "type": "VERSION",
+            },
+            "container": [Circular],
+            "instances": Map {},
+            "instancesDeferred": Map {},
+            "name": "fire-js-version",
+          },
+          "firebase-app-version" => Provider {
+            "component": Component {
+              "instanceFactory": [Function anonymous],
+              "instantiationMode": "LAZY",
+              "multipleInstances": false,
+              "name": "firebase-app-version",
+              "serviceProps": Object {},
+              "type": "VERSION",
+            },
+            "container": [Circular],
+            "instances": Map {},
+            "instancesDeferred": Map {},
+            "name": "firebase-app-version",
+          },
+          "auth" => Provider {
+            "component": Object {
+              "instanceFactory": [Function instanceFactory],
+              "instantiationMode": "LAZY",
+              "multipleInstances": false,
+              "name": "auth",
+              "serviceProps": Object {
+                "ActionCodeInfo": Object {
+                  "Operation": Object {
+                    "EMAIL_SIGNIN": "EMAIL_SIGNIN",
+                    "PASSWORD_RESET": "PASSWORD_RESET",
+                    "RECOVER_EMAIL": "RECOVER_EMAIL",
+                    "VERIFY_EMAIL": "VERIFY_EMAIL",
+                  },
+                },
+                "ActionCodeURL": [Function d],
+                "Auth": [Function Lm],
+                "AuthCredential": [Function kg],
+                "EmailAuthProvider": [Function d],
+                "Error": [Function M],
+                "FacebookAuthProvider": [Function d],
+                "GithubAuthProvider": [Function d],
+                "GoogleAuthProvider": [Function d],
+                "OAuthProvider": [Function d],
+                "PhoneAuthProvider": [Function d],
+                "RecaptchaVerifier": [Function d],
+                "SAMLAuthProvider": [Function d],
+                "TwitterAuthProvider": [Function d],
+              },
+              "type": "PUBLIC",
+            },
+            "container": [Circular],
+            "instances": Map {
+              "[DEFAULT]" => Object {
+                "apiKey": "AIzaSyC79EBEgrIGKpJH1EJY37Dcn2Uo6OwVcFk",
+                "appName": "[DEFAULT]",
+                "authDomain": "knight-rider-cabs.firebaseapp.com",
+                "currentUser": Object {
+                  "apiKey": "AIzaSyC79EBEgrIGKpJH1EJY37Dcn2Uo6OwVcFk",
+                  "appName": "[DEFAULT]",
+                  "authDomain": "knight-rider-cabs.firebaseapp.com",
+                  "createdAt": "1591515492551",
+                  "displayName": null,
+                  "email": "kasun@gmail.com",
+                  "emailVerified": false,
+                  "isAnonymous": false,
+                  "lastLoginAt": "1605953753999",
+                  "phoneNumber": null,
+                  "photoURL": null,
+                  "providerData": Array [
+                    Object {
+                      "displayName": null,
+                      "email": "kasun@gmail.com",
+                      "phoneNumber": null,
+                      "photoURL": null,
+                      "providerId": "password",
+                      "uid": "kasun@gmail.com",
+                    },
+                  ],
+                  "redirectEventId": null,
+                  "stsTokenManager": Object {
+                    "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjNlNTQyN2NkMzUxMDhiNDc2NjUyMDhlYTA0YjhjYTZjODZkMDljOTMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20va25pZ2h0LXJpZGVyLWNhYnMiLCJhdWQiOiJrbmlnaHQtcmlkZXItY2FicyIsImF1dGhfdGltZSI6MTYwNTk1Mzg3MSwidXNlcl9pZCI6IkNDbTUxMEdRNlJaRm9VeFBjVWxxSVY2S2w2bTEiLCJzdWIiOiJDQ201MTBHUTZSWkZvVXhQY1VscUlWNktsNm0xIiwiaWF0IjoxNjA1OTUzODcxLCJleHAiOjE2MDU5NTc0NzEsImVtYWlsIjoia2FzdW5AZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbImthc3VuQGdtYWlsLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.bDVPn_21W4za1GOI-bxTGz31VQahmyj2Pk1HcXMKAO0L537CgNxOLdNKV-8qcLWbCLI3slMkBl92NsQX1ct_dNnZP51ZuEXCGYqYl5VdIoj-d0wKz1YOErf1m5QgLwQtW2nZFw6_1GRQBPKktADzeNqL945SpWFVJuYBN5Ko5QkgJgUteWTFL_gaj-EzV-UNUq24-WUKhl38m5J_d0278-aAgQqtkd4QNtIKQDfVvekVWA7VHnl_ehYaXMB3UzsaIxTguC4P9YG684EdU8ooYZz764qigCXOt6HAnqUmK8O4zjeq0rQJ8PTVMFQ9Ld4nRoY2_NZ6Ufz32Et30Fs9lg",
+                    "apiKey": "AIzaSyC79EBEgrIGKpJH1EJY37Dcn2Uo6OwVcFk",
+                    "expirationTime": 1605957470798,
+                    "refreshToken": "AG8BCnc6Szg5HdbkMG8AMa-xcCIQX4JU_Rs14tPO7YSpLmOUX8u8JxWLztZ1ugFaRj9RCr-bp8fIZPTzYDz1Shbrvp5Kw2eIMmaxYdD4YGybILX2bC7aBdWaBqAgk-ghKPZg5tNJy-tGa-BZEQ8LgPFDXv6dipjhEpruBOpQpT1-zathcBu2eM9rRyrO9WYpsi-2h5VrUqVFJp1_WBF4U55w5riKr_ZQuw",
+                  },
+                  "tenantId": null,
+                  "uid": "CCm510GQ6RZFoUxPcUlqIV6Kl6m1",
+                },
+              },
+            },
+            "instancesDeferred": Map {},
+            "name": "auth",
+          },
+          "auth-internal" => Provider {
+            "component": Object {
+              "instanceFactory": [Function instanceFactory],
+              "instantiationMode": "LAZY",
+              "multipleInstances": false,
+              "name": "auth-internal",
+              "type": "PRIVATE",
+            },
+            "container": [Circular],
+            "instances": Map {
+              "[DEFAULT]" => Object {
+                "addAuthTokenListener": [Function bound ],
+                "getToken": [Function bound ],
+                "getUid": [Function bound ],
+                "removeAuthTokenListener": [Function bound ],
+              },
+            },
+            "instancesDeferred": Map {},
+            ...(truncated to the first 10000 characters)
+working
+Found document at customers/2vBT2z73gJ5cEonALtt4
+Found document at customers/EwtfMIgKs0dcfCSPVWRg
+working
+
+Stopping packager...
+› Closing Expo server
